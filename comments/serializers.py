@@ -3,6 +3,6 @@ from models import Comment
 
 
 class CommentSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Comment
-        fields = ('author', 'text')
+	class Meta:
+		model = Comment
+		fields = ('author', 'text')
