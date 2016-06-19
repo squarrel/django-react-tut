@@ -5,22 +5,23 @@
 <title>
 	{% block title %}{% endblock %}
 </title>
-<!--
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
--->
+<!--
 	<script src="{% static 'js/react.js' %}"></script>
 	<script src="{% static 'js/react-dom.js' %}"></script>
-	<script type="text/babel" src="{% static 'js/comments.js' %}"></script>
+-->
 </head>
 
 <body>
 	{% block body %}
 		<div id='content'></div>
 	{% endblock %}
+	<script type="text/babel" src="{% static 'js/comments.js' %}"></script>
 </body>
 
 </html>
